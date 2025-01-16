@@ -1,3 +1,5 @@
+//672110545 Virawit Kongthong ADT Tutorial 3
+
 public class stack{
     private static int[] stackArray;
     private static int top;
@@ -38,16 +40,7 @@ public class stack{
         System.out.println(stackArray[top]);
     }
 
-    public static int size() {
-            return top + 1;
-        }
-    
-    public static String printStack(){
-        String result = "";
-        for (int i = 0; i < size(); i++) {
-            result = result + " " + stackArray[i];
-        }
-        return "[" + result + "]";
+    public static int capacity() {
+        return capacity;
     }
-
 }
