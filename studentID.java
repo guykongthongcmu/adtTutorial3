@@ -8,7 +8,7 @@ public class studentID {
         int studentID = 672115045;
         String studentIDString = Integer.toString(studentID);
 
-        for (int i = 0; i < 9; i++) {
+        for (int i = 0; i < studentIDArray.capacity(); i++) {
             studentIDArray.push(Character.getNumericValue(studentIDString.charAt(i)));
         }
 
