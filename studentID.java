@@ -13,7 +13,6 @@ public class studentID {
         studentIDArray.push(new studentClass("109", "Kevin", "1.8"));
         studentIDArray.push(new studentClass("110", "Hank", "4.0"));
 
-
         System.out.println("Element at top is " + studentIDArray.peek());
 
         for (int i = 0; i < 3; i++) {
