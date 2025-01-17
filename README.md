@@ -1,3 +1,5 @@
+672115045 Virawit Kongthong ADT Tutorial 3
+
 with inputs: 
 studentIDArray.push(new studentClass("100", "Joe", "2.5"));
 studentIDArray.push(new studentClass("103", "John", "3.0"));
