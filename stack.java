@@ -1,7 +1,7 @@
 //672110545 Virawit Kongthong ADT Tutorial 3
 
 public class stack{
-    private static studentClass[] stackArray;
+    public static studentClass[] stackArray;
     private static int top;
     private static int capacity; 
         
@@ -16,6 +16,7 @@ public class stack{
         System.out.println("Stack overflow");
     } else {
         stackArray[++top] = element;
+        System.out.println("Element " + element + " is pushed into the queue");
     }
     }
 
