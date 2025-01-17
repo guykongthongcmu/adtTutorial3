@@ -3,18 +3,23 @@
 
 public class studentID {
     public static void main(String[] args) {
-        stack studentIDArray = new stack(9);
+        stack studentIDArray = new stack(7);
 
-        int studentID = 672115045;
-        String studentIDString = Integer.toString(studentID);
+        studentIDArray.push(new studentClass("100", "Joe", "2.5"));
+        studentIDArray.push(new studentClass("103", "John", "3.0"));
+        studentIDArray.push(new studentClass("102", "James", "2.3"));
+        studentIDArray.push(new studentClass("120", "Louis", "1.4"));
+        studentIDArray.push(new studentClass("105", "Henry", "2.8"));
+        studentIDArray.push(new studentClass("109", "Kevin", "1.8"));
+        studentIDArray.push(new studentClass("110", "Hank", "4.0"));
 
-        for (int i = 0; i < studentIDArray.capacity(); i++) {
-            studentIDArray.push(Character.getNumericValue(studentIDString.charAt(i)));
+
+        System.out.println("Element at top is " + studentIDArray.peek());
+
+        for (int i = 0; i < 3; i++) {
+            System.out.println("Popped " + studentIDArray.pop());
         }
 
-        studentIDArray.peek();
-        studentIDArray.pop();
-        studentIDArray.pop();
-        studentIDArray.pop();
+        System.out.println("Stack size is " + studentIDArray.max());
     }
 }
